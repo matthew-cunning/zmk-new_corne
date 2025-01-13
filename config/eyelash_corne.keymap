@@ -54,10 +54,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R      &kp T                         &kp UP                &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F      &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp RIGHT_SHIFT
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V      &kp B  &kp SPACE              &kp DOWN              &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                              &kp LGUI  &kp SPACE  &mo 2                                               &mo 1  &kp ENTER  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp E     &kp R      &kp T                         &kp UP                &kp Y  &kp U      &kp I         &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F      &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &kp J      &kp K         &kp L    &kp SEMI  &kp RIGHT_SHIFT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V      &kp B  &kp SPACE              &kp DOWN              &kp N  &kp M      &kp COMMA     &kp DOT  &kp FSLH  &kp RCTRL
+                              &kp LGUI  &kp SPACE  &mo 2                                               &mo 1  &kp ENTER  &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -66,10 +66,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp TAB    &kp N1   &kp N2           &kp N3        &kp N4         &kp N5                                     &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8         &kp N9     &kp N0   &kp DELETE
-&kp LSHFT  &kp F11  &kp LS(LC(TAB))  &kp PAGE_UP   &kp PAGE_DOWN  &kp LC(TAB)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP         &kp RIGHT  &kp F12  &kp RSHFT
-&kp LCTRL  &kp F1   &kp F2           &kp F3        &kp F4         &kp F5       &kp C_MUTE                    &mmv MOVE_DOWN                   &kp F6    &kp F7    &kp F8         &kp F9     &kp F10  &kp RCTRL
-                                     &kp LEFT_GUI  &kp TAB        &trans                                                                      &trans    &trans    &kp RIGHT_ALT
+&kp TAB    &kp N1   &kp N2           &kp N3        &kp N4         &kp N5                                     &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8        &kp N9     &kp N0   &kp DELETE
+&kp LSHFT  &kp F11  &kp LS(LC(TAB))  &kp PAGE_UP   &kp PAGE_DOWN  &kp LC(TAB)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &kp F12  &kp RSHFT
+&kp LCTRL  &kp F1   &kp F2           &kp F3        &kp F4         &kp F5       &kp C_MUTE                    &mmv MOVE_DOWN                   &kp F6    &kp F7    &kp F8        &kp F9     &kp F10  &kp RCTRL
+                                     &kp LEFT_GUI  &kp TAB        &trans                                                                      &trans    &trans    &kp LEFT_ALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -78,7 +78,7 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans          &kp EXCL   &kp AT         &kp HASH          &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR           &kp BACKSLASH
+&kp LEFT_ALT    &kp EXCL   &kp AT         &kp HASH          &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR           &kp BACKSLASH
 &kp LEFT_SHIFT  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp SEMI   &kp SLASH            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE   &kp PIPE
 &kp LCTRL       &kp TILDE  &trans         &none             &kp COLON  &kp QMARK  &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &kp GRAVE
                                           &trans            &trans     &trans                                                                &trans     &kp BACKSPACE  &kp ESC
